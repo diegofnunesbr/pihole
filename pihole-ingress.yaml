@@ -4,8 +4,9 @@ metadata:
   name: pihole-ingress
   namespace: pihole
   annotations:
+    argocd.argoproj.io/sync-wave: "5"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-spec:
+	spec:
   ingressClassName: nginx
   tls:
     - hosts:
@@ -15,17 +16,8 @@ spec:
     - host: pihole.local
       http:
         paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: pihole-service-web
-                port:
-                  number: 80
-    - http:
-        paths:
-          - path: /
-            pathType: Prefix
+          - path: /admin
+            pathType: Exact
             backend:
               service:
                 name: pihole-service-web
