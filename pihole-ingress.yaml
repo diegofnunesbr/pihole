@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "5"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-	spec:
+spec:
   ingressClassName: nginx
   tls:
     - hosts:
@@ -17,7 +17,7 @@ metadata:
       http:
         paths:
           - path: /admin
-            pathType: Exact
+            pathType: Prefix
             backend:
               service:
                 name: pihole-service-web
