@@ -22,9 +22,9 @@ spec:
           image: pihole/pihole:latest
           env:
             - name: TZ
-              value: "America/Sao_Paulo"
+              value: America/Sao_Paulo
             - name: DNSMASQ_LISTENING
-              value: "all"
+              value: all
           ports:
             - name: dns-udp
               containerPort: 53
