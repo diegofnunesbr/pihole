@@ -118,6 +118,7 @@ metadata:
   namespace: pihole
   annotations:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    argocd.argoproj.io/link: https://pihole.local/admin
 spec:
   ingressClassName: nginx
   tls:
