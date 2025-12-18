@@ -105,11 +105,12 @@ spec:
   secretName: pihole-tls
   duration: 8760h
   renewBefore: 720h
+  commonName: pihole.local
+  dnsNames:
+    - pihole.local
   issuerRef:
     name: selfsigned
     kind: ClusterIssuer
-  dnsNames:
-    - pihole.local
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
