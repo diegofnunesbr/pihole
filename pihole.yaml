@@ -40,8 +40,6 @@ spec:
               value: "America/Sao_Paulo"
             - name: DNSMASQ_LISTENING
               value: "all"
-            - name: ALLOW_FROM
-              value: "127.0.0.1,192.168.1.0/24,192.168.7.0/24"
           ports:
             - name: dns-udp
               containerPort: 53
