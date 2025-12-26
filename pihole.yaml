@@ -69,7 +69,7 @@ metadata:
   namespace: pihole
 spec:
   type: LoadBalancer
-  loadBalancerIP: 192.168.1.4
+  loadBalancerIP: 192.168.15.4
   selector:
     app: pihole
   ports:
