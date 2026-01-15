@@ -21,11 +21,9 @@ kubectl apply -f pihole/applications/argocd-pihole.yaml
 
 ## Configurar o acesso local do Pi-hole no Windows
 
-**Este comando deve ser executado em um PowerShell aberto como Administrador.**
+> **Importante:** execute o comando abaixo em um **PowerShell aberto como Administrador**.
 
-> Execute o comando abaixo em um **PowerShell aberto como Administrador**.
-
-```powershell (mode ADM)
+```powershell
 Add-Content C:\Windows\System32\drivers\etc\hosts "192.168.1.3 pihole.local"
 ```
 
