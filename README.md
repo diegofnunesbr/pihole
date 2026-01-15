@@ -1,6 +1,6 @@
 # Pi-hole
 
-Este guia descreve a instalação e remoção do **Pi-hole** em um cluster Kubernetes, utilizando o manifesto `pihole.yaml`.
+Este guia descreve a instalação e remoção do **Pi-hole** em um cluster **Kubernetes**, utilizando o manifesto `pihole.yaml`.
 
 ## Pré-requisitos
 
@@ -21,7 +21,7 @@ kubectl apply -f pihole/applications/argocd-pihole.yaml
 
 ## Configurar o acesso local do Pi-hole no Windows
 
-> **Importante:** execute o comando abaixo em um **PowerShell aberto como Administrador**.
+> **OBS:** execute o comando abaixo em um **PowerShell** aberto como **Administrador**.
 
 ```powershell
 Add-Content C:\Windows\System32\drivers\etc\hosts "192.168.1.3 pihole.local"
