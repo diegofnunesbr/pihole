@@ -36,6 +36,6 @@ https://pihole.local/
 ## Remover o Pi-hole
 
 ```bash
-kubectl delete -f pihole/applications/argocd-pihole.yaml
+kubectl delete -f applications/argocd-pihole.yaml
 kubectl delete namespace pihole
 ```
