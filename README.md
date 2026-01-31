@@ -16,7 +16,8 @@ Este guia descreve a instalação e remoção do **Pi-hole** em um cluster **Kub
 
 ```bash
 git clone https://github.com/diegofnunesbr/pihole.git
-kubectl apply -f pihole/applications/argocd-pihole.yaml
+cd pihole
+kubectl apply -f applications/argocd-pihole.yaml
 ```
 
 ## Configurar o acesso local do Pi-hole no Windows
